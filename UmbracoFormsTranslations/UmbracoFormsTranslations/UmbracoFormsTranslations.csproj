@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>CarbonSixDigital</Company>
+    <Authors>Gareth Wright</Authors>
+    <Description>A plugin for Umbraco 8 which allows you to convert an Umbraco Form to use # dictionary items.</Description>
+    <PackageProjectUrl>https://github.com/carbonsixdigital/UmbracoFormsTranslations</PackageProjectUrl>
+     <RepositoryUrl>https://github.com/carbonsixdigital/UmbracoFormsTranslations</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags></PackageTags>
+    <PackageDescription>A plugin for Umbraco 8 which allows you to convert an Umbraco Form to use # dictionary items.</PackageDescription>
+    <Version>1.0.0.0</Version>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins/UmbracoFormsTranslations/**/*.*" copyToOutput="true">
+      <IncludeInPackage>true</IncludeInPackage>
+      <CopyToOutput>true</CopyToOutput>
+      <BuildAction>Content</BuildAction>
+      <copyToOutput>true</copyToOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Flurl" Version="2.8.2" />
+    <PackageReference Include="Flurl.Http" Version="2.4.2" />
+    <PackageReference Include="Humanizer.Core" Version="2.8.26" />
+    <PackageReference Include="UmbracoCms.Core" Version="8.11.1" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.11.1" />
+    <PackageReference Include="UmbracoForms.Core" Version="8.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+</Project>

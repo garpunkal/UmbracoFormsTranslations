@@ -1,0 +1,37 @@
+﻿<div ng-controller="UmbracoFormsTranslations.Convert.Controller" ng-init="init()" id="convert">
+
+    <div ng-if="isForm">
+
+        <div class="umb-dialog-body form-horizontal" ng-if="!loading">
+            <div class="umb-pane" ng-if="isValid">
+                <p><localize key="convert_valid">The form can be converted, please click convert.</localize></p>
+            </div>
+
+            <div class="umb-pane" ng-if="!isValid">
+                <p class="red"><localize key="convert_notvalid">Unfortunately this entity isn't suitable for converting. </localize></p>
+            </div>
+        </div>
+
+        <div style="height: 25px;clear:both;" ng-if="loading">
+            <umb-load-indicator></umb-load-indicator>
+        </div>
+
+        <div class="umb-dialog-footer btn-toolbar umb-btn-toolbar">
+            <a class="btn btn-link ng-scope" ng-click="nav.hideDialog()" ng-if="!busy">
+                <localize key="convert_cancel">Cancel</localize>
+            </a>
+
+            <button class="btn btn-primary" ng-click="convert()" ng-disabled="!isValid || busy || loading">
+                <localize key="convert_save">Convert</localize>
+            </button>
+        </div>
+    </div>
+
+    <div ng-if="!isForm">
+        <div class="umb-dialog-body form-horizontal">
+            <div class="umb-pane">
+                <p class="red"><localize key="convert_itemisntsuitable">Unfortunately this entity isn't suitable for conversion.</localize></p>
+            </div>
+        </div>
+    </div>
+</div>

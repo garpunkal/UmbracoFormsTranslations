@@ -1,0 +1,5 @@
+﻿{
+  javascript: [
+    "~/App_Plugins/UmbracoFormsTranslations/backoffice/convert/UmbracoFormsTranslations.Convert.Controller.js",
+    "~/App_Plugins/UmbracoFormsTranslations/backoffice/convert/UmbracoFormsTranslations.Convert.Resources.js"
+  ], }
