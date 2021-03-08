@@ -52,5 +52,5 @@
                 });
         };
     }
-    angular.module('umbraco').controller("umbracoFormsTranslations.Convert.Controller", ConvertActionController);
+    angular.module('umbraco').controller("UmbracoFormsTranslations.Convert.Controller", ConvertActionController);
 })();
