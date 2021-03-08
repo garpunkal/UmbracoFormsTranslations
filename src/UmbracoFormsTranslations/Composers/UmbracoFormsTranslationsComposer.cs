@@ -27,7 +27,7 @@ namespace UmbracoFormsTranslations.Composers
                         {
                             var textService = DependencyResolver.Current.GetService<ILocalizedTextService>();
 
-                            var convert = new MenuItem("convertNode", textService?.Localize(Constants.Lang.Convert.ConvertForm));
+                            var convert = new MenuItem("convertNode", textService?.Localize("convert/convertForm"));
                             convert.AdditionalData.Add("actionView", "/App_Plugins/UmbracoFormsTranslations/backoffice/convert/convert.html");
                             convert.Icon = "settings color-blue";
                             evt.Menu.Items.Add(convert);
