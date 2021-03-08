@@ -45,6 +45,10 @@ UmbracoCms.Web 8.11.1
 UmbracoForms.Core 8.6.0
 ~~~
 
+# Umbraco Backoffice credentials
+- **email**: test@carbonsix.digital
+- **password**: >;#jRwxjg(
+
 # Contact
 [carbonsix.digital](https://carbonsix.digital/contact-us/)
 

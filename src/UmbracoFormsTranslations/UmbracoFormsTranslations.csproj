@@ -11,7 +11,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
     <PackageDescription>A plugin for Umbraco 8 which allows you to convert an Umbraco Forms fields to use dictionary items.</PackageDescription>
-    <Version>1.0.3.0</Version>
+    <Version>1.0.4.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <AssemblyName>CarbonSixDigital.UmbracoFormsTranslations</AssemblyName>
@@ -42,5 +42,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
   </ItemGroup>
-
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName) == Debug xcopy &quot;$(ProjectDir)app_plugins&quot; &quot;$(SolutionDir)umbracoformstranslations.Web\app_plugins&quot; /D /y /s /r" />
+  </Target>
 </Project>

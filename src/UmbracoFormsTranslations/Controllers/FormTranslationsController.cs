@@ -57,11 +57,15 @@ namespace UmbracoFormsTranslations.Controllers
                 string path = string.Format(_fileFormat, model.Id);
                 string fullPath = _fileSystem.GetFullPath(path);
 
-                var form = new Url(fullPath)
-                      .GetJsonAsync<Form>()
-                      .GetAwaiter()
-                      .GetResult();
-                 
+                Form form = null;
+                if (fullPath.StartsWith("http"))
+                    form = new Url(fullPath)
+                          .GetJsonAsync<Form>()
+                          .GetAwaiter()
+                          .GetResult();
+                else
+                    form = JsonConvert.DeserializeObject<Form>(System.IO.File.ReadAllText(fullPath));
+
                 if (form == null)
                     return new ConvertResponse("Form convertion was unsuccessful - form not found") { ResultType = Enums.ResultType.Error };
 

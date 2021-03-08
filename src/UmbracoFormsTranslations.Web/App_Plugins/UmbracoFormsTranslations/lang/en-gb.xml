@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
+  <area alias="convert">
+    <key alias="cancel"><![CDATA[Cancel]]></key>
+    <key alias="convertForm"><![CDATA[Convert]]></key>
+    <key alias="save"><![CDATA[Convert]]></key>
+    <key alias="notvalid"><![CDATA[Unfortunately this form isn't suitable for conversion.]]></key>
+    <key alias="itemisntsuitable"><![CDATA[Unfortunately this form isn't suitable for conversion.]]></key>
+    <key alias="image"><![CDATA[Form:]]></key>
+    <key alias="valid">
+      <![CDATA[This form can be converted. <br><br><span class="blue">Please note, this might take some time.</span>]]>
+    </key>
+  </area>
+</language>

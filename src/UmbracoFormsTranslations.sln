@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoFormsTranslations", "UmbracoFormsTranslations\UmbracoFormsTranslations.csproj", "{DC28E6B3-2E56-4F81-9D00-2DE348FE3C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoFormsTranslations", "UmbracoFormsTranslations\UmbracoFormsTranslations.csproj", "{DC28E6B3-2E56-4F81-9D00-2DE348FE3C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoFormsTranslations.Web", "UmbracoFormsTranslations.Web\UmbracoFormsTranslations.Web.csproj", "{ED3E5A9D-D845-4B07-826C-EF88C43E4618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DC28E6B3-2E56-4F81-9D00-2DE348FE3C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC28E6B3-2E56-4F81-9D00-2DE348FE3C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC28E6B3-2E56-4F81-9D00-2DE348FE3C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3E5A9D-D845-4B07-826C-EF88C43E4618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3E5A9D-D845-4B07-826C-EF88C43E4618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3E5A9D-D845-4B07-826C-EF88C43E4618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3E5A9D-D845-4B07-826C-EF88C43E4618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
