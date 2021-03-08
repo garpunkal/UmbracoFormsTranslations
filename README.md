@@ -35,6 +35,16 @@ Only the following field properties are converted:
 ![Translations](screenshots/translations.png)
 ![Translations](screenshots/translations-values.png)
 
+# Dependencies
+~~~
+Flurl 2.8.2
+Flurl.Http 2.4.2
+Humanizer.Core 2.8.26
+UmbracoCms.Core 8.11.1
+UmbracoCms.Web 8.11.1
+UmbracoForms.Core 8.6.0
+~~~
+
 # Contact
 [carbonsix.digital](https://carbonsix.digital/contact-us/)
 
