@@ -11,7 +11,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
     <PackageDescription>A plugin for Umbraco 8 which allows you to convert an Umbraco Forms fields to use dictionary items.</PackageDescription>
-    <Version>1.0.1.0</Version>
+    <Version>1.0.2.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <AssemblyName>CarbonSixDigital.UmbracoFormsTranslations</AssemblyName>
@@ -35,7 +35,7 @@
     <PackageReference Include="Humanizer.Core" Version="2.8.26" />
     <PackageReference Include="UmbracoCms.Core" Version="8.11.1" />
     <PackageReference Include="UmbracoCms.Web" Version="8.11.1" />
-    <PackageReference Include="UmbracoForms.Core" Version="8.6.1" />
+    <PackageReference Include="UmbracoForms.Core" Version="8.6.0" />
   </ItemGroup>
 
   <ItemGroup>
