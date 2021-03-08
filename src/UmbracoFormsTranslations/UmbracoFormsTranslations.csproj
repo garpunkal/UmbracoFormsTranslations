@@ -5,14 +5,17 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>CarbonSixDigital</Company>
     <Authors>Gareth Wright</Authors>
-    <Description>A plugin for Umbraco 8 which allows you to convert an Umbraco Form to use # dictionary items.</Description>
+    <Description>A plugin for Umbraco 8 which allows you to convert an Umbraco Forms fields to use dictionary items.</Description>
     <PackageProjectUrl>https://github.com/carbonsixdigital/UmbracoFormsTranslations</PackageProjectUrl>
      <RepositoryUrl>https://github.com/carbonsixdigital/UmbracoFormsTranslations</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
-    <PackageDescription>A plugin for Umbraco 8 which allows you to convert an Umbraco Form to use # dictionary items.</PackageDescription>
-    <Version>1.0.0.0</Version>
+    <PackageDescription>A plugin for Umbraco 8 which allows you to convert an Umbraco Forms fields to use dictionary items.</PackageDescription>
+    <Version>1.0.1.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyName>CarbonSixDigital.UmbracoFormsTranslations</AssemblyName>
+    <RootNamespace>CarbonSixDigital.UmbracoFormsTranslations</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
